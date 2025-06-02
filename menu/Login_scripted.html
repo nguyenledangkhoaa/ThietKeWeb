@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Đăng Nhập</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    .container {
+      width: 100%;
+      margin-top: 50px;
+      color: white;
+    }
+
+    .nd {
+      width: 100%;
+      display: block;
+    }
+
+    .nd a {
+      text-decoration: none;
+      text-align: right;
+      align-items: end;
+    }
+
+    .nd button {
+      color: white;
+      background-color: #4338ca;
+      width: 400px;
+    }
+
+    .nd input {
+      background-color: #11182d;
+      width: 400px;
+      height: 50px;
+      color: wheat;
+    }
+
+    .nd input,
+    button {
+      padding: 5px;
+      margin: 20px;
+      border: 1px solid #3f3569;
+      border-radius: 10px;
+      justify-content: center;
+    }
+
+    .nd .bt {
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .bt a {
+      border: 1px solid #3f3569;
+      padding: 5px;
+      margin: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .nd p {
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 323px;
+      height: 58px;
+    }
+  </style>
+</head>
+
+<body style="background-color: #11182d;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="nd">
+          <img class="logo" src="images/logo.png">
+          <h3 class="text-tilte p-3" style="font-weight: bold;">Đăng Nhập</h3>
+          <input type="email" placeholder="Email của bạn" required /> <br />
+          <input type="text" placeholder="Mật Khẩu" /> <br />
+          <button type="button" onclick="handleLogin()" style="font-weight: bold;">Đăng nhập</button>
+          <br />
+          <a href="#" class="p-4" style="color:#3f3569"><b>Bạn quên mật khẩu?</b></a>
+          <p class="text-center" style="margin-right: 70px;">Hoặc</p>
+
+          <div class="bt d-flex">
+            <a href="LoginToGG.html" style="font-size: 14px; color:white; font-weight: bold;"><img
+                src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png" alt="Google" width="24"
+                height="24" />
+              Đăng nhập bằng Google</a>
+            <a href="LoginToFb.html" style="font-size: 14px; color:white; font-weight: bold;"><i
+                class="bi bi-facebook"></i> Đăng nhập bằng Facebook</a>
+          </div>
+          <p class="text-secondary text-center">
+            Bạn chưa có tài khoản ? <a href="Register.html" style="color:white; font-weight: bold;">Đăng ký ngay</a>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="col-lg-7">
+        <div class="text-end">
+          <img src="images/logo (2).png" alt="Facebook" width="768px" height="768px " style="float: inline-center" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function handleLogin() {
+      const inputs = document.querySelectorAll('.nd input');
+      const email = inputs[0].value.trim();
+      const password = inputs[1].value.trim();
+
+      if (!email || !password) {
+        alert("Vui lòng nhập đầy đủ email và mật khẩu.");
+        return;
+      }
+
+      if (!email.includes("@")) {
+        alert("Email không hợp lệ.");
+        return;
+      }
+
+      const domain = email.split("@")[1];
+      switch (domain) {
+        case "gmail.com":
+        default:
+          alert("Đăng nhập thành công!");
+          break;
+      }
+
+      alert("Đăng nhập thành công!");
+      window.location.href = "Home.html";
+    }
+  </script>
+
+</body>
+
+</html>

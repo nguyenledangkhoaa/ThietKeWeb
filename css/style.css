@@ -1,0 +1,222 @@
+   body {
+      background: #171717;
+   }
+
+   header {
+      background: #3f3569 !important;
+   }
+#footer {
+    background-color: #000;
+    color: white;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+}
+   .input-search {
+      width: 150%;
+      border: none;
+   }
+
+   .btn-search {
+      border: none;
+   }
+
+   .box-1 {
+      margin-top: 10px;
+   }
+
+   .dropdown-menu {
+      border-radius: 2px !important;
+   }
+
+   .dropdown-item {
+      padding: 4px 10px;
+   }
+
+   .dropdown-item:hover {
+      border-radius: 2px;
+      background: rgb(225, 225, 225, 0.8);
+      text-decoration: underline;
+      color: blueviolet;
+   }
+
+   .text-menu:hover {
+      color: red !important;
+   }
+
+   .nav-link {
+      color: white;
+   }
+
+   .custumer-menu-col {
+      width: 700px;
+   }
+
+   .nav-link:hover {
+      color: burlywood;
+   }
+
+   .menu .nav-item {
+      border-left: 0.8px solid rgb(248, 237, 237, 0.2);
+   }
+
+   .title {
+      color: white;
+   }
+
+   .tuongtac>p {
+      margin-right: 20px;
+   }
+
+   table .bi {
+      color: rgb(192, 192, 192, 0.7);
+   }
+
+   .bxh {}
+
+   .bxh .box {
+      padding: 5px;
+      text-align: center;
+      background: #404040;
+      border-radius: 3px
+   }
+
+   .bxh button {
+      padding: 8px 40px;
+      text-align: center;
+      border: none;
+      background-color: transparent;
+      color: rgb(238, 237, 237);
+      border-radius: 3px;
+   }
+
+   .active {
+      background: sandybrown !important;
+   }
+
+   .bxh button:hover {
+      background: sandybrown;
+      color: white;
+      transition: 0.5s;
+   }
+
+   .card {
+      background: none;
+      border: none;
+   }
+
+   .hang>h1 {
+      width: 10px;
+      color: rgb(211, 211, 211);
+      z-index: -1;
+      font-size: 680%;
+      line-height: 76%;
+      font-weight: 900;
+   }
+
+   .hang>img {
+      z-index: 2;
+      margin-left: 26px;
+      box-shadow: 1px 2px 12px 3px rgb(209, 209, 209, 0.3);
+
+   }
+
+   .binhluan>div>a {
+      text-decoration: none;
+      padding: 10px 10px;
+      display: block;
+      width: 25%;
+      background: rgb(229, 229, 229);
+      border-top: 1px solid red;
+      border-left: 3px solid rgb(88, 88, 88);
+      border-right: 3px solid rgb(88, 88, 88);
+      border-bottom: none;
+      margin-top: 1px;
+   }
+
+   .table>:not(caption)>*>* {
+      background: none !important;
+      color: white;
+      border: none;
+   }
+
+   .nd {
+      word-break: break-word;
+
+   }
+
+   .tag>a {
+      margin: 4px;
+   }
+
+   @media (min-width: 992px) {
+
+      /* PC: search sang phải */
+      .custom-navbar {
+         padding: 3px;
+         color: white !important;
+      }
+
+      .input-search {
+         width: 300px;
+
+      }
+
+      .info tr>td {
+         width: 100% !important;
+      }
+
+      .comment {
+         margin-left: -70px;
+      }
+
+      .comment>div>.avt>img {
+         width: 40% !important;
+         height: 50%;
+      }
+
+      .box-1 {
+         margin-top: 0px;
+      }
+
+      .custom-menu-from {
+         display: flex;
+         justify-content: space-between;
+
+      }
+
+      .menu-pc {
+         display: none;
+      }
+
+      .comic-title {
+         margin-top: 20px;
+         margin-bottom: 30px;
+      }
+
+      .img-page {
+         max-width: 100%;
+         margin-bottom: 0px;
+         height: auto;
+      }
+
+      .text-orange {
+         color: orange !important;
+      }
+
+      .inf-co {
+         margin: 10px 150px;
+      }
+
+      .btn-orange {
+         background-color: darkorange;
+         color: white;
+         border: none;
+      }
+
+      .btn-orange:hover {
+         background-color: orange;
+         color: white;
+      }
+   }

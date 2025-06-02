@@ -1,0 +1,20 @@
+[
+    {
+        "comic": "One punch man",
+        "genre": "Action, Adventure",
+        "folder": "chap1",
+        "total": 24
+    },
+    {
+        "comic": "Arya Bàn Bên Thỉnh Thoảng Lại Trêu Ghẹo Tôi Bằng Tiếng Nga",
+        "genre": "Comedy, School Life",
+        "folder": "chap2",
+        "total": 19
+    },
+    {
+        "comic": "Câu lạc bộ siêu cấp về nhà",
+        "genre": "School Life, Slice Of Life",
+        "folder": "chap3",
+        "total": 21
+    }
+]
